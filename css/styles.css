@@ -1,0 +1,286 @@
+:root {
+    --title-text-color: #212121;
+    --fishnet-text-color: #404BBF;
+    --text-color: #FFFFFF;
+    --text-list: #434455;
+    --logo-color: #2E2F42; 
+    --button-color: #4D5AE5;
+    --button-activ: #404BBF;
+    --logo-color-foot: #F4F4FD;
+}
+
+body {
+    background-color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: var(--text-list);
+    width: 1440px;
+}
+.section-title {
+    margin-bottom: 72px;
+    margin-top: 0; 
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: var(--logo-color);
+}
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--logo-color);
+    margin: 32px 16px 8px;
+}
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-list); 
+    margin: 0 16px 32px;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.container {
+    width: 1158px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header .container { 
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--button-color);
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0;
+}
+.logo-span { 
+    color: var(--logo-color);
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+    margin: 0;
+    margin-left: 76px;
+    padding: 0;
+    gap: 40px;
+}
+.header-address {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-style: normal;
+}
+.auht-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 40px;
+    padding-left: 0;
+}
+.site-nav .link {
+    margin-left: 0;
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--logo-color);
+    letter-spacing: 0.02em;
+}
+.auht-nav .link {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-list);
+    font-style: normal;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--fishnet-text-color);
+    text-decoration: underline;
+}
+.site-nav .link.current {
+    color: var(--fishnet-text-color);
+    text-decoration: underline;
+}
+.auht-nav .link:hover,
+.auht-nav .link:focus {
+    color: var(--fishnet-text-color);
+}
+.hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+      padding: 188px 0;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.hero-title {
+    color: var(--text-color);
+    width: 496px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+.hero-btn {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background: var(--button-color);
+    width: 169px;
+    margin: 0 auto;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--button-activ);
+    /* color: var(--button-activ); */
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section {
+    padding-top: 120px;
+}
+.section .feature,
+.section .profile-group,
+.section .specialist-group
+{
+    display: flex;
+    gap: 24px;
+    padding-left: 0;
+    margin: 0;
+}
+.section.profile {
+    padding-bottom: 120px; 
+}
+.feature-title,
+.feature-explanation {
+    margin: 0;
+}
+.section.specialist {
+    padding-bottom: 120px;
+    margin: 0;
+    background: var(--logo-color-foot);
+}
+.specialist .specialist-list {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--text-color);
+}
+.specialist-list {
+    background-color: var(--text-color);
+}
+.footer {
+    background: var(--logo-color);
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    padding: 100px 0;
+    margin: 0;
+    margin-left: 156px;
+}
+.footer .logo-span {
+    color: var(--logo-color-foot);
+    font-style: normal;
+}
+.adress-profession {
+    color: var(--logo-color-foot); 
+    margin: 0;
+}
+
+.section-goods {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.menu-nav .link-btn {
+    font-family: "Roboto", sans-serif;
+    padding: 12px 20px;
+    border: 1px solid #E7E9FC;
+    color: var(--button-color);
+    background: var(--logo-color-foot);
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto 72px;
+    padding: 0;
+}
+.menu-nav .link-btn:hover,
+.menu-nav .link-btn:focus {
+    color:var(--text-color);
+    background-color: var(--fishnet-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.section-goods .goods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+.goods-gap {
+    display: flex;
+    gap: 24px;
+}
+.goods .goods-list {
+    background: var(--text-color);
+    border: 1px solid #E7E9FC;
+}
