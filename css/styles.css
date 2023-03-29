@@ -37,14 +37,12 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     color: var(--logo-color);
-    /* margin: 32px 16px 8px; */
     margin-bottom: 8px;
 }
 .text {
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-list); 
-    /* margin: 0 16px 32px; */
 
 }
 .link {
@@ -209,7 +207,6 @@ ul {
 }
 .feature-list {
     width: calc((100% - 72px) / 4);
-    padding: 32px 16px;
 } 
 .section.profile,
 .section.specialist,
@@ -232,7 +229,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 .specialist-wrap {
-    margin: 32px 16px;
+    padding: 32px 16px;
 }
 .specialist-profession {
     margin-bottom: 8px;
@@ -385,4 +382,10 @@ ul {
 }
 .goods .goods-list:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.goods-title {
+    margin: 32px 16px 8px;
+}
+.goods-services {
+    margin: 0 16px 32px;
 }
