@@ -14,7 +14,6 @@ body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: var(--text-list);
-    width: 1440px;
 }
 p, h1, h2, h3 {
     margin: 0;
@@ -132,6 +131,10 @@ ul {
 .auht-nav .link:focus {
     color: var(--fishnet-text-color);
 }
+.properties {
+    width: 1440px;
+}    
+
 .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -287,6 +290,7 @@ ul {
 .footer {
     background: var(--logo-color);
     padding: 100px 0 100px 156px;
+    width: 1440px;
 }
 .footer .container {
     display: flex;
